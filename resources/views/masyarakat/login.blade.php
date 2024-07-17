@@ -29,14 +29,14 @@
                     <div class="p-8 md:p-12">
                         <h1 class="text-3xl font-bold mb-2">Login Form</h1>
                         <p class="text-slate-500 mb-6">Login to your account to get access easily</p>
-                        <form action="{{ route('loginAdmin') }}" method="POST">
-                         @csrf
+                      <form action="{{ route('loginMasyarakat') }}" method="POST">
+                        @csrf
                             <div class="mb-4">
                                 <label class="block text-gray-700 text-sm font-bold mb-2"
-                                    for="username">Username</label>
+                                    for="username">Nik</label>
                                 <input
                                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    id="username" type="text" placeholder="Masukkan username anda">
+                                    id="username" type="text" placeholder="Masukkan Nik anda">
                             </div>
                             <div class="mb-6">
                                 <label class="block text-gray-700 text-sm font-bold mb-2"
@@ -46,8 +46,12 @@
                                     id="password" type="password" placeholder="Masukkan password anda">
                             </div>
                             <button class="bg-green-500 text-white font-bold py-2 px-4 rounded w-full">Login</button>
-                            <p class="text-center mt-4">
-                                <a class="no-underline font-bold text-sky-500" href="{{ route('loginMasyarakat') }}">Kembali</a>
+                            <p class="text-center mt-4">Belum punya akun?
+                                <a class="no-underline font-bold text-sky-500" href="{{ route('registerMasyarakat') }}">Daftar disini</a>
+                            </p>
+
+                             <p class="text-center mt-4">
+                                <a class="no-underline font-bold text-sky-500" href="{{ route('loginAdmin') }}">Login petugas/rt</a>
                             </p>
                         </form>
                     </div>

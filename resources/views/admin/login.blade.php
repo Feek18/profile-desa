@@ -23,8 +23,8 @@
                         <div class="flex items-center justify-center">
                             <img class="h-16 w-auto" src="{{ asset('img/logo.png') }}" alt="Your Company">
                         </div>
-                        <h1 class="text-3xl font-bold">Desa Kertamulya</h1>
-                        <p>Welcome back to Website Desa Kertamulya</p>
+                        <h1 class="text-3xl font-bold">Desa Kedang murung</h1>
+                        <p>Welcome back to Website Desa Kedang murung</p>
                     </div>
                     <div class="p-8 md:p-12">
                         <h1 class="text-3xl font-bold mb-2">Login Form</h1>

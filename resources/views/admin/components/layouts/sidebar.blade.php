@@ -5,9 +5,9 @@
         <div class="flex justify-between items-center gap-2">
             <img class="h-14 w-auto hidden md:block lg:block" src="{{ asset('img/logo.png') }}" alt="Your Company">
             <div class="mr-auto">
-                <h3 class="text-[#282828] text-lg mb-0 uppercase font-semibold">Desa Kertamulya
+                <h3 class="text-[#282828] text-lg mb-0 uppercase font-semibold">Desa Kedang murung
                 </h3>
-                <p class="text-slate-500 text-[12px] font-bold">Kabupaten Bandung Barat, Jawa Barat</p>
+                <p class="text-slate-500 text-[12px] font-bold">Kabupaten kutai kartanegara, kota bangun</p>
             </div>
         </div>
         <hr class="my-3">

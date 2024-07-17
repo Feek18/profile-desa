@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 
-Route::get('/login', function () {
+Route::get('/', function () {
     return view('index');
 });
 

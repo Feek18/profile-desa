@@ -2,12 +2,11 @@
     class="fixed top-0 left-0 z-40 w-64 h-screen lg:translate-x-0 transition-transform duration-200 ease-in-out"
     aria-label="Sidebar">
     <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
-        <div class="flex justify-between items-center gap-2">
-            <img class="h-14 w-auto hidden md:block lg:block" src="{{ asset('img/logo.png') }}" alt="Your Company">
-            <div class="mr-auto">
-                <h3 class="text-[#282828] text-lg mb-0 uppercase font-semibold">Desa Kedang murung
-                </h3>
-                <p class="text-slate-500 text-[12px] font-bold">Kabupaten kutai kartanegara, kota bangun</p>
+        <div class="flex flex-col justify-between items-center">
+            <img class="h-14 hidden md:block" src="{{ asset('img/logo.png') }}" alt="Your Company">
+            <div class="lg:text-center mt-2">
+                <h3 class="text-[#282828] text-[18px] mb-0 uppercase font-semibold">Desa Kedang Murung</h3>
+                <p class="text-slate-500 text-[12px] font-bold">Kabupaten Kutai Kartanegara, Kota Bangun</p>
             </div>
         </div>
         <hr class="my-3">

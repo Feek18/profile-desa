@@ -21,7 +21,8 @@
                     <div class="p-6 md:p-8">
                         <h1 class="text-3xl font-bold mb-2">Registration Form</h1>
                         <p class="text-slate-500 mb-6">Please fill in this form to create an account</p>
-                        <form action="">
+                        <form action="{{ route('registerMasyarakat') }}" method="POST">
+                         @csrf
                             <div class="flex items-center gap-4">
                                 <div class="flex-1 mb-4">
                                     <label class="block text-gray-700 text-sm font-bold mb-2" for="fullname">Nama
@@ -30,13 +31,21 @@
                                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                         id="fullname" type="text" placeholder="Masukkan nama lengkap anda">
                                 </div>
+                                
                                 <div class="flex-1 mb-4">
                                     <label class="block text-gray-700 text-sm font-bold mb-2"
-                                        for="email">Email</label>
+                                        for="email">Nik</label>
                                     <input
                                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                        id="email" type="email" placeholder="Masukkan email anda">
+                                        id="email" type="text" placeholder="Masukkan Nik anda">
                                 </div>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2"
+                                    for="username">Email</label>
+                                <input
+                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="username" type="Email" placeholder="Masukkan user anda">
                             </div>
                             <div class="mb-4">
                                 <label class="block text-gray-700 text-sm font-bold mb-2" for="no_telp">No Telp</label>
@@ -44,13 +53,7 @@
                                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                     id="no_telp" type="number" placeholder="Masukkan nomor telepon anda">
                             </div>
-                            <div class="mb-4">
-                                <label class="block text-gray-700 text-sm font-bold mb-2"
-                                    for="username">Username</label>
-                                <input
-                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    id="username" type="text" placeholder="Masukkan username anda">
-                            </div>
+                           
                             <div class="mb-6">
                                 <label class="block text-gray-700 text-sm font-bold mb-2"
                                     for="password">Password</label>

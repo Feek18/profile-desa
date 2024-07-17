@@ -31,12 +31,13 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 // Protected routes
 Route::middleware('auth.custom')->group(function () {
     // dashboard admin staff
+    // other protected routes
+});
 Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
 Route::get('/dashboard/artikel', [DashboardController::class, 'artikel'])->name('artikel');
 Route::get('/dashboard/pengaduan', [DashboardController::class, 'pengaduan'])->name('pengaduan');
 Route::get('/dashboard/tanggapan', [DashboardController::class, 'tanggapan'])->name('tanggapan');
 Route::get('/dashboard/petugas', [DashboardController::class, 'petugas'])->name('petugas');
+Route::get('/dashboard/penduduk', [DashboardController::class, 'penduduk'])->name('penduduk');
 Route::get('/dashboard/surat', [DashboardController::class, 'surat'])->name('surat');
 Route::get('/dashboard/pemetaan', [DashboardController::class, 'pemetaan'])->name('pemetaan');
-    // other protected routes
-});

@@ -27,6 +27,10 @@ class DashboardController extends Controller
     {
         return view('admin.components.pages.petugas');
     }
+    public function penduduk()
+    {
+        return view('admin.components.pages.rumahtangga');
+    }
     public function surat()
     {
         return view('admin.components.pages.surat');
